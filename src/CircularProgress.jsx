@@ -1,7 +1,7 @@
 import './App.css'
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 
-function CircularProgress({ value, maxValue, text, footerText }) {
+export default function CircularProgress({ value, maxValue, text, footerText }) {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
       <div style={{ display: "flex", width: "100px", height: "100px" }}>
@@ -40,5 +40,3 @@ function CircularProgress({ value, maxValue, text, footerText }) {
     </div>
   );
 }
-
-export default CircularProgress;
